@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "manifest_version": 3,
+  "name": "Clean X Menu",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://*.x.com/*"],
+  "description": "Remove unwanted elements from X menu",
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["https://*.x.com/*"]
+    }
+  ]
+}
